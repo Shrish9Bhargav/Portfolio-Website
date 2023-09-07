@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrish's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Shrish Bhargav</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Shrish Bhargav</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/Profile-Picture.png" alt="Shrish Bhargav Profile Picture" class="img">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Shrish Bhargav</h1>
+            <p class="section__text__p2">Full Stack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Shrish_Bhargav_Resume.pdf')">
+                Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info</button>
+            </div>
+            <div class="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" 
+                onclick="location.href='https://linkedin.com/in/shrish-bhargav-222356249'">
+                <img src="./assets/github.png" alt="My github profile" class="icon" 
+                onclick="location.href='https://github.com/Shrish9Bhargav'">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/PhotoRoom-20230812_053053-transformed.png" 
+                alt="Profile Picture"
+                class="about-pic">
+
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon"
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>1 month <b>Research Intern @EveDigitalSpace</b>
+                        <br>4 months <b>Citizen Scientist @NASA</b>
+                        <br>1+ years <b> Full Stack Development</b>
+                        </p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon"
+                        class="icon">
+                        <h3>Education</h3>
+                        <p><b>Bachelors' Degree</b><br>Bachelors of Engineering(Ongoing)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>As a highly motivated pre-final year student, I like to work on projects that challenge my abilities. 
+                        I also take great pride in sincerity, persistence and empathy towards other people. 
+                        I yearn to contribute something worthwhile towards my nation in the upcoming future :)
+                        As a science individual, I share my love for physics and astronomy in particular.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="expereince icon" class="icon">
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="expereince icon" class="icon">
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="expereince icon" class="icon">
+                        <div>
+                            <h3>SASS</h3>
+                            <p>Intermediate</p>
+                        </div>
+
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="expereince icon" class="icon">
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Basic</p>
+                        </div>
+
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="expereince icon" class="icon">
+                        <div>
+                            <h3>TypeScript</h3>
+                            <p>Basic</p>
+                        </div>
+
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="expereince icon" class="icon">
+                        <div>
+                            <h3>Material UI</h3>
+                            <p>Intermediate</p>
+                        </div>
+
+                        </article>
+                        
+                    </div>
+
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="expereince icon" class="icon">
+                        <div>
+                            <h3>PostgresSQL</h3>
+                            <p>Basic</p>
+                        </div>
+
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="expereince icon" class="icon">
+                        <div>
+                            <h3>Node.js</h3>
+                            <p>Intermediate</p>
+                        </div>
+
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="expereince icon" class="icon">
+                        <div>
+                            <h3>Express.js</h3>
+                            <p>Intermediate</p>
+                        </div>
+
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="expereince icon" class="icon">
+                        <div>
+                            <h3>Git</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow"
+        class="icon arrow"
+        onclick="location.href='./#project'">
+    </section>
+
+    <section id="project">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/Project-1.png" alt="First Project" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">
+                File Management Automation
+            </h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shrish9Bhargav/Auto-File-Management-System/tree/main'">
+                    Github
+                </button>
+            </div>
+        </div>
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/png-transparent-android-ping-pong-poke-optical-character-recognition-android-thumbnail.png" alt="First Project" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">
+                OCR Scanner with Python
+            </h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shrish9Bhargav/OCR-using-ML'">
+                    Github
+                </button>
+             
+            </div>
+        </div>
+        
+        </div></div></div>
+        <img src="./assets/arrow.png" alt="Arrow"
+        class="icon arrow"
+        onclick="location.href='./#contact'">
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">
+            Get in Touch
+        </p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="iconLinkedin contact-icon">
+                <p><a href="https://www.linkedin.com/in/shrish-bhargav-222356249">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experiences">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <p>Copyright&#169; 2023 Shrish Bhargav. All Rights Reserved. </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
